@@ -26,13 +26,13 @@ Since this is LAN so it only works on devices that connect to the same network.
 1. Do step 1 to 4.
 2. Add files that you wanna upload to the "manage_torrent/storage" folder.
 3. In MENU after step 4.1, choose 1 to upload file. Type file name that exists in storage folder.
-4. Done!
+4. Done! You can check your uploaded files in [here](https://tracker-server-467x.onrender.com/user/home).
 
 ## Downloading files (on downloader PC)
 1. Do step 1 to 4.
-2. Navigate to the link in the MENU, login/signup your account then you will see list of uploaded files.
-3. Click download to download torrent file.
-4. Add torrent files you just downloaded to "manage_torrent/torrent" folder.
-5. In MENU, choose 2. Download files.
-6. Type the torrent file name then enter.
+2. Navigate to the [link](https://tracker-server-467x.onrender.com/user/home) in the MENU.
+3. Download torrent files that you want.
+4. Move torrent files you just downloaded to "manage_torrent/torrent" folder.
+5. In MENU, choose "2. Download files".
+6. Type the torrent file's name then hit enter. ("filename.torrent")
 7. Done!
