@@ -206,6 +206,7 @@ async function createMenu() {
   console.log("");
   console.log("3. ❌ Exit");
   console.log("======================");
+  console.log("https://tracker-server-467x.onrender.com/home");
   console.log("");
   const answer = await rl.question("Choose option (1, 2, 3): ");
 
@@ -217,14 +218,14 @@ async function createMenu() {
       console.log("File found. Uploading to tracker...");
       const uploadResult = await uploadFile(fileName, currentHost, currentPort);
       if (uploadResult) {
-        console.log("Upload to tracker successfully");
+        console.log("Upload to tracker successfully!");
 
         await new Promise((resolve, reject) => setTimeout(resolve, 3000));
         console.clear();
         await createMenu();
       }
     } else {
-      console.log("File not found, try again");
+      console.log("File not found, try again.");
       await new Promise((resolve, reject) => setTimeout(resolve, 3000));
 
       console.clear();
@@ -237,13 +238,13 @@ async function createMenu() {
     const downloadResult = await downloadFile(fileName);
 
     if (downloadResult) {
-      console.log("Successfully download file");
+      console.log("Successfully download file!");
 
       await new Promise((resolve, reject) => setTimeout(resolve, 3000));
       console.clear();
       await createMenu();
     } else {
-      console.log("Download failed, try again");
+      console.log("Download failed, try again.");
 
       await new Promise((resolve, reject) => setTimeout(resolve, 3000));
       console.clear();
@@ -291,7 +292,7 @@ async function createServerMenu() {
   } else if (answer === "3") {
     exit(0);
   } else {
-    console.log("Option doesn't exist, try again");
+    console.log("Option doesn't exist, try again.");
     await new Promise((resolve, reject) => setTimeout(resolve, 2000));
     console.clear();
     await createServerMenu();
