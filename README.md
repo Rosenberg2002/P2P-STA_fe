@@ -4,7 +4,7 @@
 Download this source code to your PC, or clone it.
 
 ### Step 2
-There is some adjustment to do on your PC:
+There is some adjustments to do on your PC:
 1. Make sure you've installed Node.js (https://nodejs.org/en/download/package-manager) and add to PATH
 2. If you're using windows, copy this to terminal "netsh advfirewall firewall add rule name="ICMPv4 Allow Ping Requests" protocol=icmpv4:8,any dir=in action=allow"
 3. Settings > Network & internet > Ethernet (Wifi if you're using laptop) > "Wifi name" properties > Private network. 
