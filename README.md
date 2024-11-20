@@ -52,8 +52,8 @@ git clone <repository-url>
 ## File Uploading (Uploader's PC)
 1. Complete the setup steps (1–3 above).
 2. Add files to the `manage_torrent/storage` folder that you wish to upload.
-3. Open the terminal:
-   - From the main menu, select **Option 1: Upload File**.
+3. Open the previous terminal:
+   - From the MENU, select **1. Upload Files**.
    - Enter the file name located in the `storage` folder.
 4. You can view your uploaded files [here](https://tracker-server-467x.onrender.com/home).
 
@@ -63,8 +63,8 @@ git clone <repository-url>
 1. Complete the setup steps (1–3 above).
 2. Access the [file list](https://tracker-server-467x.onrender.com/home).
 3. Download the desired `.torrent` files and move them to the `manage_torrent/torrent` folder.
-4. Open the terminal:
-   - From the main menu, select **Option 2: Download Files**.
+4. Open the previous terminal:
+   - From the MENU, select **2. Download Files**.
    - Enter the `.torrent` file name (e.g., `filename.torrent`) and press Enter.
 5. The file will begin downloading.
 
@@ -73,7 +73,3 @@ git clone <repository-url>
 ## Notes
 - This application works exclusively within a **LAN** environment.
 - Ensure all participating devices are connected to the same network for optimal performance.
-
----
-
-This revised README provides a cleaner structure, improved formatting, and a more professional tone while maintaining clarity for users.
