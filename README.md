@@ -66,7 +66,7 @@ git clone <repository-url>
 4. Open the previous terminal:
    - From the MENU, select **2. Download Files**.
    - Enter the `.torrent` file name (e.g., `filename.torrent`) and press Enter.
-5. The file will begin downloading.
+5. The file will begin downloading. And appears to the `storage` folder after succeeded.
 
 ---
 
