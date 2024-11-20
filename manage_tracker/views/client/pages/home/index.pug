@@ -1,0 +1,24 @@
+extends ../../layouts/default.pug
+include ../../mixins/box-head.pug
+
+block main
+
+  div(class="container mx-auto")
+    div(class="wrapper")
+
+      +box-head(pageTitle)
+
+      div(class="flex justify-center items-center my-[50px]")
+        table(class="table-auto border-collapse border w-[80vw]")
+          tr 
+            th(class="p-[15px] border") File name
+            th(class="p-[15px] border") Link 
+            th(class="p-[15px] border") Date Uploaded
+            th(class="p-[15px] border") Seeders 
+          each file in files
+            tr 
+              td(class="p-[15px] border") #{file.fileName}
+              td(class="p-[15px] border")
+                a(href=file.link class="hover:text-[#4BA3E3]" download=file.fileName) Download
+              td(class="p-[15px] border") #{file.createdAt}
+              td(class="p-[15px] border") #{file.seeders.length}
