@@ -1,38 +1,79 @@
 # Simple Torrent-like Application
-## How to run
-### Step 1
-Download this source code to your PC, or clone it.
 
-### Step 2
-There is some adjustments to do on your PC:
-1. Make sure you've installed Node.js (https://nodejs.org/en/download/package-manager) and add to PATH
-2. If you're using windows, copy this to terminal "netsh advfirewall firewall add rule name="ICMPv4 Allow Ping Requests" protocol=icmpv4:8,any dir=in action=allow"
-3. Settings > Network & internet > Ethernet (Wifi if you're using laptop) > "Wifi name" properties > Private network. 
+## Overview
+This is a simple torrent-like application designed for file sharing within a LAN (Local Area Network). Follow the steps below to set it up and use it effectively.
 
-### Step 3
-Navigate to terminal:
-1. cd manage_torrent
-2. npm install
-3. npm start
-4. node index.js
+---
 
-### Step 4
-1. Choose server options (2. LAN)
-Since this is LAN so it only works on devices that connect to the same network.
-3. Access this [link](https://tracker-server-467x.onrender.com/user/register).
-4. Create your account.
+## Prerequisites
+1. Install **Node.js** on your system and add it to your PATH. [Download Node.js](https://nodejs.org/en/download/package-manager)
+2. On Windows:
+   - Open a terminal and execute the following command to enable ICMP ping requests:
+     ```bash
+     netsh advfirewall firewall add rule name="ICMPv4 Allow Ping Requests" protocol=icmpv4:8,any dir=in action=allow
+     ```
+   - Ensure your network connection is set to **Private**:
+     - Go to **Settings > Network & Internet > Ethernet/Wi-Fi > Connection Properties**.
+     - Set the connection to **Private**.
 
-## Uploading files (on uploader PC)
-1. Do step 1 to 4.
-2. Add files that you wanna upload to the "manage_torrent/storage" folder.
-3. In MENU after step 4.1, choose 1 to upload file. Type file name that exists in storage folder.
-4. Done! You can check your uploaded files in [here](https://tracker-server-467x.onrender.com/user/home).
+---
 
-## Downloading files (on downloader PC)
-1. Do step 1 to 4.
-2. Navigate to the [link](https://tracker-server-467x.onrender.com/user/home) in the MENU.
-3. Download torrent files that you want.
-4. Move torrent files you just downloaded to "manage_torrent/torrent" folder.
-5. In MENU, choose "2. Download files".
-6. Type the torrent file's name then hit enter. ("filename.torrent")
-7. Done!
+## Installation & Setup
+
+### Step 1: Clone or Download the Repository
+Download the source code to your local machine or clone the repository using:
+```bash
+git clone <repository-url>
+```
+
+### Step 2: Install Dependencies
+1. Open a terminal and navigate to the project directory:
+   ```bash
+   cd manage_torrent
+   ```
+2. Install the required dependencies:
+   ```bash
+   npm install
+   ```
+
+### Step 3: Start the Application
+1. Run the following commands:
+   ```bash
+   npm start
+   node index.js
+   ```
+2. In the terminal, select **Server Options (2: LAN)**.  
+   This ensures the application works within the same network.
+
+3. Register an account via this [link](https://tracker-server-467x.onrender.com/user/register).
+
+---
+
+## File Uploading (Uploader's PC)
+1. Complete the setup steps (1–3 above).
+2. Add files to the `manage_torrent/storage` folder that you wish to upload.
+3. Open the terminal:
+   - From the main menu, select **Option 1: Upload File**.
+   - Enter the file name located in the `storage` folder.
+4. You can view your uploaded files [here](https://tracker-server-467x.onrender.com/user/home).
+
+---
+
+## File Downloading (Downloader's PC)
+1. Complete the setup steps (1–3 above).
+2. Access the [file list](https://tracker-server-467x.onrender.com/user/home).
+3. Download the desired `.torrent` files and move them to the `manage_torrent/torrent` folder.
+4. Open the terminal:
+   - From the main menu, select **Option 2: Download Files**.
+   - Enter the `.torrent` file name (e.g., `filename.torrent`) and press Enter.
+5. The file will begin downloading.
+
+---
+
+## Notes
+- This application works exclusively within a **LAN** environment.
+- Ensure all participating devices are connected to the same network for optimal performance.
+
+---
+
+This revised README provides a cleaner structure, improved formatting, and a more professional tone while maintaining clarity for users.
