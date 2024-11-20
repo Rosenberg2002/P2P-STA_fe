@@ -55,13 +55,13 @@ git clone <repository-url>
 3. Open the terminal:
    - From the main menu, select **Option 1: Upload File**.
    - Enter the file name located in the `storage` folder.
-4. You can view your uploaded files [here](https://tracker-server-467x.onrender.com/user/home).
+4. You can view your uploaded files [here](https://tracker-server-467x.onrender.com/home).
 
 ---
 
 ## File Downloading (Downloader's PC)
 1. Complete the setup steps (1–3 above).
-2. Access the [file list](https://tracker-server-467x.onrender.com/user/home).
+2. Access the [file list](https://tracker-server-467x.onrender.com/home).
 3. Download the desired `.torrent` files and move them to the `manage_torrent/torrent` folder.
 4. Open the terminal:
    - From the main menu, select **Option 2: Download Files**.
