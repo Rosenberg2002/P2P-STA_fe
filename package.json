@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Build your own Bittorrent challenge, from CodeCrafters",
     "type": "module",
-    "main": "main.js",
+    "main": "index.js",
     "scripts": {
         "dev": "node app/main.js",
         "start": "node --inspect index.js"
