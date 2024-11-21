@@ -29,7 +29,7 @@ git clone <repository-url>
 ### Step 2: Install Dependencies
 1. Open a terminal and navigate to the project directory:
    ```bash
-   cd manage_torrent
+   cd P2P-STA_fe
    ```
 2. Install the required dependencies:
    ```bash
